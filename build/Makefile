@@ -182,17 +182,17 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
 #=============================================================================
-# Target rules for targets named test_project
+# Target rules for targets named main_project
 
 # Build rule for target.
-test_project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_project
-.PHONY : test_project
+main_project: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project
+.PHONY : main_project
 
 # fast build rule for target.
-test_project/fast:
-	$(MAKE) $(MAKESILENT) -f test_project/CMakeFiles/test_project.dir/build.make test_project/CMakeFiles/test_project.dir/build
-.PHONY : test_project/fast
+main_project/fast:
+	$(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/build
+.PHONY : main_project/fast
 
 #=============================================================================
 # Target rules for targets named picotoolForceReconfigure
@@ -204,7 +204,7 @@ picotoolForceReconfigure: cmake_check_build_system
 
 # fast build rule for target.
 picotoolForceReconfigure/fast:
-	$(MAKE) $(MAKESILENT) -f test_project/CMakeFiles/picotoolForceReconfigure.dir/build.make test_project/CMakeFiles/picotoolForceReconfigure.dir/build
+	$(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/picotoolForceReconfigure.dir/build.make main_project/CMakeFiles/picotoolForceReconfigure.dir/build
 .PHONY : picotoolForceReconfigure/fast
 
 #=============================================================================
@@ -217,21 +217,8 @@ picotoolBuild: cmake_check_build_system
 
 # fast build rule for target.
 picotoolBuild/fast:
-	$(MAKE) $(MAKESILENT) -f test_project/CMakeFiles/picotoolBuild.dir/build.make test_project/CMakeFiles/picotoolBuild.dir/build
+	$(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/picotoolBuild.dir/build.make main_project/CMakeFiles/picotoolBuild.dir/build
 .PHONY : picotoolBuild/fast
-
-#=============================================================================
-# Target rules for targets named project_a
-
-# Build rule for target.
-project_a: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_a
-.PHONY : project_a
-
-# fast build rule for target.
-project_a/fast:
-	$(MAKE) $(MAKESILENT) -f project_a/CMakeFiles/project_a.dir/build.make project_a/CMakeFiles/project_a.dir/build
-.PHONY : project_a/fast
 
 # Help Target
 help:
@@ -248,8 +235,7 @@ help:
 	@echo "... pioasmBuild"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
-	@echo "... project_a"
-	@echo "... test_project"
+	@echo "... main_project"
 .PHONY : help
 
 

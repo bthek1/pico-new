@@ -2,27 +2,23 @@
 
 set -e
 
-BUILD_DIR="build"
+DEFAULT_PROJECT="main_project"
+PROJECT_NAME="${1:-$DEFAULT_PROJECT}"
+BUILD_DIR="build/$PROJECT_NAME"
+MOUNT_POINT=$(find /media/$USER -type d -name "RPI-RP2" 2>/dev/null | head -n 1)
 
-# Check for optional --clean flag
-CLEAN_BUILD=false
-if [[ "$1" == "--clean" ]]; then
-  CLEAN_BUILD=true
+UF2_FILE="$BUILD_DIR/$PROJECT_NAME.uf2"
+
+if [[ ! -f "$UF2_FILE" ]]; then
+  echo "❌ .uf2 file not found for project '$PROJECT_NAME'. Have you run make?"
+  exit 1
 fi
 
-if $CLEAN_BUILD; then
-  echo "🧹 Cleaning $BUILD_DIR directory..."
-  rm -rf "$BUILD_DIR"
+if [[ -z "$MOUNT_POINT" ]]; then
+  echo "❌ Pico not found. Please plug in your Pico in BOOTSEL mode."
+  exit 1
 fi
 
-# Ensure build directory exists
-mkdir -p "$BUILD_DIR"
-cd "$BUILD_DIR"
-
-echo "⚙️ Running cmake .."
-cmake ..
-
-echo "🛠️ Building project with make -j4"
-make -j4
-
-echo "✅ Build complete!"
+echo "🚀 Flashing $UF2_FILE to $MOUNT_POINT..."
+cp "$UF2_FILE" "$MOUNT_POINT"
+echo "✅ Flash complete!"

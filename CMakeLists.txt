@@ -13,5 +13,4 @@ project(pico_projects C CXX ASM)
 pico_sdk_init()
 
 # Add your subproject(s)
-add_subdirectory(test_project)
-add_subdirectory(project_a)
+add_subdirectory(main_project)
