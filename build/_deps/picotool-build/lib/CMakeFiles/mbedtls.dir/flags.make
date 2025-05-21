@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DMBEDTLS_CONFIG_FILE=\"picotool_mbedtls_config.h\"
 
-C_INCLUDES = -I/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/lib/include -isystem /home/proxmox-ml5/Documents/pico/pico-sdk/lib/mbedtls/include
+C_INCLUDES = -I/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/lib/include -isystem /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/lib/mbedtls/include
 
 C_FLAGS = -O3 -DNDEBUG
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-sdk/src/rp2_common/pico_stdio_usb
+# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/rp2_common/pico_stdio_usb
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

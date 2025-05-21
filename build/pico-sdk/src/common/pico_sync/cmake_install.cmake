@@ -1,4 +1,4 @@
-# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-sdk/src/common/pico_sync
+# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/common/pico_sync
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -45,13 +45,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  20 .debug_rnglists 00002d44  00000000  00000000  00037b50  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line   000168f8  00000000  00000000  0003a894  2**0
+ 21 .debug_line   000172df  00000000  00000000  0003a894  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 22 .debug_str    00004e00  00000000  00000000  0005118c  2**0
+ 22 .debug_str    00004fc7  00000000  00000000  00051b73  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 23 .debug_frame  00001c94  00000000  00000000  00055f8c  2**2
+ 23 .debug_frame  00001c94  00000000  00000000  00056b3c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 24 .debug_line_str 0000036d  00000000  00000000  00057c20  2**0
+ 24 .debug_line_str 000003c8  00000000  00000000  000587d0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/main_project.elf:     file format elf32-littlearm

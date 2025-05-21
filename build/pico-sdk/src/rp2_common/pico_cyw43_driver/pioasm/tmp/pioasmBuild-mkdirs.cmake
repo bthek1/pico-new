@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/proxmox-ml5/Documents/pico/pico-sdk/tools/pioasm"
+  "/home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/tools/pioasm"
   "/home/proxmox-ml5/Documents/pico/pico-new/build/pioasm"
   "/home/proxmox-ml5/Documents/pico/pico-new/build/pioasm-install"
   "/home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp"

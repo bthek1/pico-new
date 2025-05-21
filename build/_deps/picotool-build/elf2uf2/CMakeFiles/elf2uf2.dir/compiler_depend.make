@@ -7,7 +7,7 @@ elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o: /home/proxmox-ml5/Documents/pico/p
   /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/elf/elf_file.h \
   /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/elf2uf2/elf2uf2.h \
   /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/errors/errors.h \
-  /home/proxmox-ml5/Documents/pico/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h \
+  /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -503,6 +503,8 @@ elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o: /home/proxmox-ml5/Documents/pico/p
 
 /usr/include/alloca.h:
 
+/home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h:
+
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/c++/13/bits/atomic_base.h:
@@ -516,8 +518,6 @@ elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o: /home/proxmox-ml5/Documents/pico/p
 /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/elf2uf2/elf2uf2.h:
 
 /usr/include/c++/13/cwchar:
-
-/home/proxmox-ml5/Documents/pico/pico-sdk/src/common/boot_uf2_headers/include/boot/uf2.h:
 
 /usr/include/c++/13/bits/invoke.h:
 

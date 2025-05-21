@@ -71,7 +71,7 @@ include pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/flags
 
 pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S: pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/python3 /home/proxmox-ml5/Documents/pico/pico-sdk/src/rp2040/boot_stage2/pad_checksum -s 0xffffffff /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
+	cd /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2 && /usr/bin/python3 /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/rp2040/boot_stage2/pad_checksum -s 0xffffffff /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
 
 pico-sdk/src/rp2040/boot_stage2/bs2_default.bin: pico-sdk/src/rp2040/boot_stage2/bs2_default.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
@@ -104,6 +104,6 @@ pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/clean:
 
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/depend: pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/depend: pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proxmox-ml5/Documents/pico/pico-new /home/proxmox-ml5/Documents/pico/pico-sdk/src/rp2040/boot_stage2 /home/proxmox-ml5/Documents/pico/pico-new/build /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2 /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proxmox-ml5/Documents/pico/pico-new /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/rp2040/boot_stage2 /home/proxmox-ml5/Documents/pico/pico-new/build /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2 /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/depend
 

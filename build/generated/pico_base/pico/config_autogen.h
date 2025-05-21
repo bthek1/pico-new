@@ -4,7 +4,7 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "/home/proxmox-ml5/Documents/pico/pico-sdk/src/boards/include/boards/pico.h"
-#include "/home/proxmox-ml5/Documents/pico/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
+#include "/home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/boards/include/boards/pico.h"
+#include "/home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h"
 
 // based on PICO_RP2040_CONFIG_HEADER_FILES:
