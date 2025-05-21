@@ -11,10 +11,26 @@ if [[ "$1" == "--clean" ]]; then
   CLEAN_BUILD=true
 fi
 
-# 🧰 Step 0: Install required system packages
-echo "🔧 Installing system dependencies..."
-sudo apt update
-sudo apt install -y cmake gcc-arm-none-eabi build-essential libnewlib-arm-none-eabi
+# 🧰 Step 0: Check and install system dependencies only if missing
+REQUIRED_PKGS=(cmake gcc-arm-none-eabi build-essential libnewlib-arm-none-eabi)
+MISSING_PKGS=()
+
+echo "🔍 Checking system dependencies..."
+
+for pkg in "${REQUIRED_PKGS[@]}"; do
+  if ! dpkg -s "$pkg" &> /dev/null; then
+    MISSING_PKGS+=("$pkg")
+  fi
+done
+
+if [ ${#MISSING_PKGS[@]} -ne 0 ]; then
+  echo "📦 Missing packages: ${MISSING_PKGS[*]}"
+  echo "🔧 Installing missing packages..."
+  sudo apt update
+  sudo apt install -y "${MISSING_PKGS[@]}"
+else
+  echo "✅ All required packages are already installed."
+fi
 
 # 🧩 Step 1: Ensure pico-sdk submodule is initialized
 if [[ ! -f "$SDK_PATH/external/pico_sdk_import.cmake" ]]; then
