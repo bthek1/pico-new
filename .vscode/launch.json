@@ -1,0 +1,17 @@
+{
+  "configurations": [
+    {
+      "name": "Pico Debug",
+      "cwd": "${workspaceFolder}/build",
+      "executable": "${workspaceFolder}/build/your_project.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "device": "RP2040",
+      "configFiles": [
+        "interface/cmsis-dap.cfg",
+        "target/rp2040.cfg"
+      ]
+    }
+  ]
+}

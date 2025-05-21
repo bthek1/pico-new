@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/CMakeFiles/picotoolBuild
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/CMakeFiles/picotoolBuild.rule
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/CMakeFiles/picotoolBuild-complete.rule
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule
