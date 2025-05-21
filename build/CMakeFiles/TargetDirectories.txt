@@ -196,8 +196,10 @@
 /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/docs/CMakeFiles/edit_cache.dir
 /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/docs/CMakeFiles/rebuild_cache.dir
 /home/proxmox-ml5/Documents/pico/pico-new/build/test_project/CMakeFiles/test_project.dir
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/CMakeFiles/picotoolForceReconfigure.dir
+/home/proxmox-ml5/Documents/pico/pico-new/build/test_project/CMakeFiles/picotoolBuild.dir
 /home/proxmox-ml5/Documents/pico/pico-new/build/test_project/CMakeFiles/edit_cache.dir
 /home/proxmox-ml5/Documents/pico/pico-new/build/test_project/CMakeFiles/rebuild_cache.dir
-/home/proxmox-ml5/Documents/pico/pico-new/build/new_project/CMakeFiles/new_project.dir
-/home/proxmox-ml5/Documents/pico/pico-new/build/new_project/CMakeFiles/edit_cache.dir
-/home/proxmox-ml5/Documents/pico/pico-new/build/new_project/CMakeFiles/rebuild_cache.dir
+/home/proxmox-ml5/Documents/pico/pico-new/build/project_a/CMakeFiles/project_a.dir
+/home/proxmox-ml5/Documents/pico/pico-new/build/project_a/CMakeFiles/edit_cache.dir
+/home/proxmox-ml5/Documents/pico/pico-new/build/project_a/CMakeFiles/rebuild_cache.dir

@@ -195,17 +195,43 @@ test_project/fast:
 .PHONY : test_project/fast
 
 #=============================================================================
-# Target rules for targets named new_project
+# Target rules for targets named picotoolForceReconfigure
 
 # Build rule for target.
-new_project: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 new_project
-.PHONY : new_project
+picotoolForceReconfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolForceReconfigure
+.PHONY : picotoolForceReconfigure
 
 # fast build rule for target.
-new_project/fast:
-	$(MAKE) $(MAKESILENT) -f new_project/CMakeFiles/new_project.dir/build.make new_project/CMakeFiles/new_project.dir/build
-.PHONY : new_project/fast
+picotoolForceReconfigure/fast:
+	$(MAKE) $(MAKESILENT) -f test_project/CMakeFiles/picotoolForceReconfigure.dir/build.make test_project/CMakeFiles/picotoolForceReconfigure.dir/build
+.PHONY : picotoolForceReconfigure/fast
+
+#=============================================================================
+# Target rules for targets named picotoolBuild
+
+# Build rule for target.
+picotoolBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolBuild
+.PHONY : picotoolBuild
+
+# fast build rule for target.
+picotoolBuild/fast:
+	$(MAKE) $(MAKESILENT) -f test_project/CMakeFiles/picotoolBuild.dir/build.make test_project/CMakeFiles/picotoolBuild.dir/build
+.PHONY : picotoolBuild/fast
+
+#=============================================================================
+# Target rules for targets named project_a
+
+# Build rule for target.
+project_a: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_a
+.PHONY : project_a
+
+# fast build rule for target.
+project_a/fast:
+	$(MAKE) $(MAKESILENT) -f project_a/CMakeFiles/project_a.dir/build.make project_a/CMakeFiles/project_a.dir/build
+.PHONY : project_a/fast
 
 # Help Target
 help:
@@ -217,10 +243,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
+	@echo "... picotoolBuild"
+	@echo "... picotoolForceReconfigure"
 	@echo "... pioasmBuild"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
-	@echo "... new_project"
+	@echo "... project_a"
 	@echo "... test_project"
 .PHONY : help
 

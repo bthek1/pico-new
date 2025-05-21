@@ -14,3 +14,4 @@ pico_sdk_init()
 
 # Add your subproject(s)
 add_subdirectory(test_project)
+add_subdirectory(project_a)
