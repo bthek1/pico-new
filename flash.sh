@@ -2,7 +2,7 @@
 
 set -e
 
-DEFAULT_PROJECT="main_project"
+DEFAULT_PROJECT="oscilloscope"
 PROJECT_NAME="${1:-$DEFAULT_PROJECT}"
 BUILD_DIR="build/$PROJECT_NAME"
 MOUNT_POINT=$(find /media/$USER -type d -name "RPI-RP2" 2>/dev/null | head -n 1)

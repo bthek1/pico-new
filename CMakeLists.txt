@@ -7,3 +7,4 @@ project(pico_projects)
 pico_sdk_init()
 
 add_subdirectory(main_project)
+add_subdirectory(oscilloscope)
