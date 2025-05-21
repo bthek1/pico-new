@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/tools/pioasm"
-  "/home/proxmox-ml5/Documents/pico/pico-new/build/pioasm"
-  "/home/proxmox-ml5/Documents/pico/pico-new/build/pioasm-install"
-  "/home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp"
-  "/home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp"
-  "/home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src"
-  "/home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp"
+  "/home/bthek1/Documents/pico-new/lib/pico-sdk/tools/pioasm"
+  "/home/bthek1/Documents/pico-new/build/pioasm"
+  "/home/bthek1/Documents/pico-new/build/pioasm-install"
+  "/home/bthek1/Documents/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp"
+  "/home/bthek1/Documents/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp"
+  "/home/bthek1/Documents/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src"
+  "/home/bthek1/Documents/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/bthek1/Documents/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/bthek1/Documents/pico-new/build/pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/src/pioasmBuild-stamp${cfgdir}") # cfgdir has leading slash
 endif()

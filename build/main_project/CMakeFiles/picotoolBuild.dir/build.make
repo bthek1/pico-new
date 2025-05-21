@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proxmox-ml5/Documents/pico/pico-new
+CMAKE_SOURCE_DIR = /home/bthek1/Documents/pico-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/proxmox-ml5/Documents/pico/pico-new/build
+CMAKE_BINARY_DIR = /home/bthek1/Documents/pico-new/build
 
 # Utility rule file for picotoolBuild.
 
@@ -77,10 +77,10 @@ main_project/CMakeFiles/picotoolBuild-complete: main_project/picotool/src/picoto
 main_project/CMakeFiles/picotoolBuild-complete: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-build
 main_project/CMakeFiles/picotoolBuild-complete: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install
 main_project/CMakeFiles/picotoolBuild-complete: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'picotoolBuild'"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E make_directory /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/CMakeFiles
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E touch /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/CMakeFiles/picotoolBuild-complete
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E touch /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bthek1/Documents/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'picotoolBuild'"
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E make_directory /home/bthek1/Documents/pico-new/build/main_project/CMakeFiles
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E touch /home/bthek1/Documents/pico-new/build/main_project/CMakeFiles/picotoolBuild-complete
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E touch /home/bthek1/Documents/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-done
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install:
 .PHONY : main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install
@@ -92,52 +92,52 @@ main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install:
 .PHONY : main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-build: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'picotoolBuild'"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-build && $(MAKE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bthek1/Documents/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Performing build step for 'picotoolBuild'"
+	cd /home/bthek1/Documents/pico-new/build/_deps/picotool-build && $(MAKE)
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-configure: main_project/picotool/tmp/picotoolBuild-cfgcmd.txt
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-configure: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'picotoolBuild'"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-build && /usr/bin/cmake --no-warn-unused-cli -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake -DPICO_SDK_PATH:FILEPATH=/home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk -DPICOTOOL_NO_LIBUSB=1 -DPICOTOOL_FLAT_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/proxmox-ml5/Documents/pico/pico-new/build/_deps -DCMAKE_RULE_MESSAGES=OFF -DCMAKE_INSTALL_MESSAGE=NEVER "-GUnix Makefiles" -S /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src -B /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-build
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-build && /usr/bin/cmake -E touch /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bthek1/Documents/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'picotoolBuild'"
+	cd /home/bthek1/Documents/pico-new/build/_deps/picotool-build && /usr/bin/cmake --no-warn-unused-cli -DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake -DPICO_SDK_PATH:FILEPATH=/home/bthek1/Documents/pico-new/lib/pico-sdk -DPICOTOOL_NO_LIBUSB=1 -DPICOTOOL_FLAT_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/bthek1/Documents/pico-new/build/_deps -DCMAKE_RULE_MESSAGES=OFF -DCMAKE_INSTALL_MESSAGE=NEVER "-GUnix Makefiles" -S /home/bthek1/Documents/pico-new/build/_deps/picotool-src -B /home/bthek1/Documents/pico-new/build/_deps/picotool-build
+	cd /home/bthek1/Documents/pico-new/build/_deps/picotool-build && /usr/bin/cmake -E touch /home/bthek1/Documents/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-configure
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-download: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-source_dirinfo.txt
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-download: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'picotoolBuild'"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E echo_append
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E touch /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bthek1/Documents/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "No download step for 'picotoolBuild'"
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E echo_append
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E touch /home/bthek1/Documents/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-download
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'picotoolBuild'"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-build && $(MAKE) install
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bthek1/Documents/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing install step for 'picotoolBuild'"
+	cd /home/bthek1/Documents/pico-new/build/_deps/picotool-build && $(MAKE) install
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-build:
 .PHONY : main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-build
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'picotoolBuild'"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -Dcfgdir= -P /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/picotool/tmp/picotoolBuild-mkdirs.cmake
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E touch /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bthek1/Documents/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'picotoolBuild'"
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -Dcfgdir= -P /home/bthek1/Documents/pico-new/build/main_project/picotool/tmp/picotoolBuild-mkdirs.cmake
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E touch /home/bthek1/Documents/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-patch: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-patch-info.txt
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-patch: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'picotoolBuild'"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E echo_append
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E touch /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bthek1/Documents/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'picotoolBuild'"
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E echo_append
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E touch /home/bthek1/Documents/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-patch
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-test: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing test step for 'picotoolBuild'"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-build && /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool/picotool version 2.1.1
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-build && /usr/bin/cmake -E touch /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bthek1/Documents/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Performing test step for 'picotoolBuild'"
+	cd /home/bthek1/Documents/pico-new/build/_deps/picotool-build && /home/bthek1/Documents/pico-new/build/_deps/picotool/picotool version 2.1.1
+	cd /home/bthek1/Documents/pico-new/build/_deps/picotool-build && /usr/bin/cmake -E touch /home/bthek1/Documents/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-test
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install:
 .PHONY : main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-install
 
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-update: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-update-info.txt
 main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-update: main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'picotoolBuild'"
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E echo_append
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E touch /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-update
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/bthek1/Documents/pico-new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No update step for 'picotoolBuild'"
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E echo_append
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E touch /home/bthek1/Documents/pico-new/build/main_project/picotool/src/picotoolBuild-stamp/picotoolBuild-update
 
 picotoolBuild: main_project/CMakeFiles/picotoolBuild
 picotoolBuild: main_project/CMakeFiles/picotoolBuild-complete
@@ -157,10 +157,10 @@ main_project/CMakeFiles/picotoolBuild.dir/build: picotoolBuild
 .PHONY : main_project/CMakeFiles/picotoolBuild.dir/build
 
 main_project/CMakeFiles/picotoolBuild.dir/clean:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && $(CMAKE_COMMAND) -P CMakeFiles/picotoolBuild.dir/cmake_clean.cmake
+	cd /home/bthek1/Documents/pico-new/build/main_project && $(CMAKE_COMMAND) -P CMakeFiles/picotoolBuild.dir/cmake_clean.cmake
 .PHONY : main_project/CMakeFiles/picotoolBuild.dir/clean
 
 main_project/CMakeFiles/picotoolBuild.dir/depend:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proxmox-ml5/Documents/pico/pico-new /home/proxmox-ml5/Documents/pico/pico-new/main_project /home/proxmox-ml5/Documents/pico/pico-new/build /home/proxmox-ml5/Documents/pico/pico-new/build/main_project /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/CMakeFiles/picotoolBuild.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/bthek1/Documents/pico-new/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bthek1/Documents/pico-new /home/bthek1/Documents/pico-new/main_project /home/bthek1/Documents/pico-new/build /home/bthek1/Documents/pico-new/build/main_project /home/bthek1/Documents/pico-new/build/main_project/CMakeFiles/picotoolBuild.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : main_project/CMakeFiles/picotoolBuild.dir/depend
 

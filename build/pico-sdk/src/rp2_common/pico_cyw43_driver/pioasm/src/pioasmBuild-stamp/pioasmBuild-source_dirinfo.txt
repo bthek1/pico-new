@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/tools/pioasm
+source_dir=/home/bthek1/Documents/pico-new/lib/pico-sdk/tools/pioasm
 work_dir=
 

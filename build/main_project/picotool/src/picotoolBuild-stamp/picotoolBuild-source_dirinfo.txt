@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src
+source_dir=/home/bthek1/Documents/pico-new/build/_deps/picotool-src
 work_dir=
 

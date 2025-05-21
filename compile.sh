@@ -11,6 +11,11 @@ if [[ "$1" == "--clean" ]]; then
   CLEAN_BUILD=true
 fi
 
+# 🧰 Step 0: Install required system packages
+echo "🔧 Installing system dependencies..."
+sudo apt update
+sudo apt install -y cmake gcc-arm-none-eabi build-essential libnewlib-arm-none-eabi
+
 # 🧩 Step 1: Ensure pico-sdk submodule is initialized
 if [[ ! -f "$SDK_PATH/external/pico_sdk_import.cmake" ]]; then
   echo "📦 Initializing Pico SDK submodule..."

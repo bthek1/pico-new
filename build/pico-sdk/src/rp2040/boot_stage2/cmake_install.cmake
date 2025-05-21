@@ -1,4 +1,4 @@
-# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/rp2040/boot_stage2
+# Install script for directory: /home/bthek1/Documents/pico-new/lib/pico-sdk/src/rp2040/boot_stage2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proxmox-ml5/Documents/pico/pico-new
+CMAKE_SOURCE_DIR = /home/bthek1/Documents/pico-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/proxmox-ml5/Documents/pico/pico-new/build
+CMAKE_BINARY_DIR = /home/bthek1/Documents/pico-new/build
 
 # Utility rule file for picotoolForceReconfigure.
 
@@ -67,7 +67,7 @@ include main_project/CMakeFiles/picotoolForceReconfigure.dir/compiler_depend.mak
 include main_project/CMakeFiles/picotoolForceReconfigure.dir/progress.make
 
 main_project/CMakeFiles/picotoolForceReconfigure:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && /usr/bin/cmake -E touch_nocreate /home/proxmox-ml5/Documents/pico/pico-new/CMakeLists.txt
+	cd /home/bthek1/Documents/pico-new/build/main_project && /usr/bin/cmake -E touch_nocreate /home/bthek1/Documents/pico-new/CMakeLists.txt
 
 picotoolForceReconfigure: main_project/CMakeFiles/picotoolForceReconfigure
 picotoolForceReconfigure: main_project/CMakeFiles/picotoolForceReconfigure.dir/build.make
@@ -78,10 +78,10 @@ main_project/CMakeFiles/picotoolForceReconfigure.dir/build: picotoolForceReconfi
 .PHONY : main_project/CMakeFiles/picotoolForceReconfigure.dir/build
 
 main_project/CMakeFiles/picotoolForceReconfigure.dir/clean:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build/main_project && $(CMAKE_COMMAND) -P CMakeFiles/picotoolForceReconfigure.dir/cmake_clean.cmake
+	cd /home/bthek1/Documents/pico-new/build/main_project && $(CMAKE_COMMAND) -P CMakeFiles/picotoolForceReconfigure.dir/cmake_clean.cmake
 .PHONY : main_project/CMakeFiles/picotoolForceReconfigure.dir/clean
 
 main_project/CMakeFiles/picotoolForceReconfigure.dir/depend:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/proxmox-ml5/Documents/pico/pico-new /home/proxmox-ml5/Documents/pico/pico-new/main_project /home/proxmox-ml5/Documents/pico/pico-new/build /home/proxmox-ml5/Documents/pico/pico-new/build/main_project /home/proxmox-ml5/Documents/pico/pico-new/build/main_project/CMakeFiles/picotoolForceReconfigure.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/bthek1/Documents/pico-new/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bthek1/Documents/pico-new /home/bthek1/Documents/pico-new/main_project /home/bthek1/Documents/pico-new/build /home/bthek1/Documents/pico-new/build/main_project /home/bthek1/Documents/pico-new/build/main_project/CMakeFiles/picotoolForceReconfigure.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : main_project/CMakeFiles/picotoolForceReconfigure.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proxmox-ml5/Documents/pico/pico-new
+CMAKE_SOURCE_DIR = /home/bthek1/Documents/pico-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/proxmox-ml5/Documents/pico/pico-new/build
+CMAKE_BINARY_DIR = /home/bthek1/Documents/pico-new/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles /home/proxmox-ml5/Documents/pico/pico-new/build/main_project//CMakeFiles/progress.marks
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles 0
+	cd /home/bthek1/Documents/pico-new/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bthek1/Documents/pico-new/build/CMakeFiles /home/bthek1/Documents/pico-new/build/main_project//CMakeFiles/progress.marks
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bthek1/Documents/pico-new/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/clean
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/preinstall
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/preinstall
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/bthek1/Documents/pico-new/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 main_project/CMakeFiles/main_project.dir/rule:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/CMakeFiles/main_project.dir/rule
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/CMakeFiles/main_project.dir/rule
 .PHONY : main_project/CMakeFiles/main_project.dir/rule
 
 # Convenience name for target.
@@ -127,15 +127,43 @@ main_project: main_project/CMakeFiles/main_project.dir/rule
 
 # fast build rule for target.
 main_project/fast:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/build
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/build
 .PHONY : main_project/fast
+
+# Convenience name for target.
+main_project/CMakeFiles/picotoolForceReconfigure.dir/rule:
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/CMakeFiles/picotoolForceReconfigure.dir/rule
+.PHONY : main_project/CMakeFiles/picotoolForceReconfigure.dir/rule
+
+# Convenience name for target.
+picotoolForceReconfigure: main_project/CMakeFiles/picotoolForceReconfigure.dir/rule
+.PHONY : picotoolForceReconfigure
+
+# fast build rule for target.
+picotoolForceReconfigure/fast:
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/picotoolForceReconfigure.dir/build.make main_project/CMakeFiles/picotoolForceReconfigure.dir/build
+.PHONY : picotoolForceReconfigure/fast
+
+# Convenience name for target.
+main_project/CMakeFiles/picotoolBuild.dir/rule:
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/CMakeFiles/picotoolBuild.dir/rule
+.PHONY : main_project/CMakeFiles/picotoolBuild.dir/rule
+
+# Convenience name for target.
+picotoolBuild: main_project/CMakeFiles/picotoolBuild.dir/rule
+.PHONY : picotoolBuild
+
+# fast build rule for target.
+picotoolBuild/fast:
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/picotoolBuild.dir/build.make main_project/CMakeFiles/picotoolBuild.dir/build
+.PHONY : picotoolBuild/fast
 
 __/lib/pico-sdk/src/common/hardware_claim/claim.o: __/lib/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : __/lib/pico-sdk/src/common/hardware_claim/claim.o
 
 # target to build an object file
 __/lib/pico-sdk/src/common/hardware_claim/claim.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/hardware_claim/claim.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : __/lib/pico-sdk/src/common/hardware_claim/claim.c.o
 
 __/lib/pico-sdk/src/common/hardware_claim/claim.i: __/lib/pico-sdk/src/common/hardware_claim/claim.c.i
@@ -143,7 +171,7 @@ __/lib/pico-sdk/src/common/hardware_claim/claim.i: __/lib/pico-sdk/src/common/ha
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/hardware_claim/claim.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/hardware_claim/claim.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/hardware_claim/claim.c.i
 .PHONY : __/lib/pico-sdk/src/common/hardware_claim/claim.c.i
 
 __/lib/pico-sdk/src/common/hardware_claim/claim.s: __/lib/pico-sdk/src/common/hardware_claim/claim.c.s
@@ -151,7 +179,7 @@ __/lib/pico-sdk/src/common/hardware_claim/claim.s: __/lib/pico-sdk/src/common/ha
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/hardware_claim/claim.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/hardware_claim/claim.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/hardware_claim/claim.c.s
 .PHONY : __/lib/pico-sdk/src/common/hardware_claim/claim.c.s
 
 __/lib/pico-sdk/src/common/pico_sync/critical_section.o: __/lib/pico-sdk/src/common/pico_sync/critical_section.c.o
@@ -159,7 +187,7 @@ __/lib/pico-sdk/src/common/pico_sync/critical_section.o: __/lib/pico-sdk/src/com
 
 # target to build an object file
 __/lib/pico-sdk/src/common/pico_sync/critical_section.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/critical_section.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/critical_section.c.o
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/critical_section.c.o
 
 __/lib/pico-sdk/src/common/pico_sync/critical_section.i: __/lib/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -167,7 +195,7 @@ __/lib/pico-sdk/src/common/pico_sync/critical_section.i: __/lib/pico-sdk/src/com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/critical_section.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 __/lib/pico-sdk/src/common/pico_sync/critical_section.s: __/lib/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -175,7 +203,7 @@ __/lib/pico-sdk/src/common/pico_sync/critical_section.s: __/lib/pico-sdk/src/com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/critical_section.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 __/lib/pico-sdk/src/common/pico_sync/lock_core.o: __/lib/pico-sdk/src/common/pico_sync/lock_core.c.o
@@ -183,7 +211,7 @@ __/lib/pico-sdk/src/common/pico_sync/lock_core.o: __/lib/pico-sdk/src/common/pic
 
 # target to build an object file
 __/lib/pico-sdk/src/common/pico_sync/lock_core.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/lock_core.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/lock_core.c.o
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/lock_core.c.o
 
 __/lib/pico-sdk/src/common/pico_sync/lock_core.i: __/lib/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -191,7 +219,7 @@ __/lib/pico-sdk/src/common/pico_sync/lock_core.i: __/lib/pico-sdk/src/common/pic
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/lock_core.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 __/lib/pico-sdk/src/common/pico_sync/lock_core.s: __/lib/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -199,7 +227,7 @@ __/lib/pico-sdk/src/common/pico_sync/lock_core.s: __/lib/pico-sdk/src/common/pic
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/lock_core.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 __/lib/pico-sdk/src/common/pico_sync/mutex.o: __/lib/pico-sdk/src/common/pico_sync/mutex.c.o
@@ -207,7 +235,7 @@ __/lib/pico-sdk/src/common/pico_sync/mutex.o: __/lib/pico-sdk/src/common/pico_sy
 
 # target to build an object file
 __/lib/pico-sdk/src/common/pico_sync/mutex.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/mutex.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/mutex.c.o
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/mutex.c.o
 
 __/lib/pico-sdk/src/common/pico_sync/mutex.i: __/lib/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -215,7 +243,7 @@ __/lib/pico-sdk/src/common/pico_sync/mutex.i: __/lib/pico-sdk/src/common/pico_sy
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/pico_sync/mutex.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/mutex.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/mutex.c.i
 
 __/lib/pico-sdk/src/common/pico_sync/mutex.s: __/lib/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -223,7 +251,7 @@ __/lib/pico-sdk/src/common/pico_sync/mutex.s: __/lib/pico-sdk/src/common/pico_sy
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/pico_sync/mutex.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/mutex.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/mutex.c.s
 
 __/lib/pico-sdk/src/common/pico_sync/sem.o: __/lib/pico-sdk/src/common/pico_sync/sem.c.o
@@ -231,7 +259,7 @@ __/lib/pico-sdk/src/common/pico_sync/sem.o: __/lib/pico-sdk/src/common/pico_sync
 
 # target to build an object file
 __/lib/pico-sdk/src/common/pico_sync/sem.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/sem.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/sem.c.o
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/sem.c.o
 
 __/lib/pico-sdk/src/common/pico_sync/sem.i: __/lib/pico-sdk/src/common/pico_sync/sem.c.i
@@ -239,7 +267,7 @@ __/lib/pico-sdk/src/common/pico_sync/sem.i: __/lib/pico-sdk/src/common/pico_sync
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/pico_sync/sem.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/sem.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/sem.c.i
 
 __/lib/pico-sdk/src/common/pico_sync/sem.s: __/lib/pico-sdk/src/common/pico_sync/sem.c.s
@@ -247,7 +275,7 @@ __/lib/pico-sdk/src/common/pico_sync/sem.s: __/lib/pico-sdk/src/common/pico_sync
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/pico_sync/sem.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/sem.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : __/lib/pico-sdk/src/common/pico_sync/sem.c.s
 
 __/lib/pico-sdk/src/common/pico_time/time.o: __/lib/pico-sdk/src/common/pico_time/time.c.o
@@ -255,7 +283,7 @@ __/lib/pico-sdk/src/common/pico_time/time.o: __/lib/pico-sdk/src/common/pico_tim
 
 # target to build an object file
 __/lib/pico-sdk/src/common/pico_time/time.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/time.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/time.c.o
 .PHONY : __/lib/pico-sdk/src/common/pico_time/time.c.o
 
 __/lib/pico-sdk/src/common/pico_time/time.i: __/lib/pico-sdk/src/common/pico_time/time.c.i
@@ -263,7 +291,7 @@ __/lib/pico-sdk/src/common/pico_time/time.i: __/lib/pico-sdk/src/common/pico_tim
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/pico_time/time.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/time.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : __/lib/pico-sdk/src/common/pico_time/time.c.i
 
 __/lib/pico-sdk/src/common/pico_time/time.s: __/lib/pico-sdk/src/common/pico_time/time.c.s
@@ -271,7 +299,7 @@ __/lib/pico-sdk/src/common/pico_time/time.s: __/lib/pico-sdk/src/common/pico_tim
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/pico_time/time.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/time.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : __/lib/pico-sdk/src/common/pico_time/time.c.s
 
 __/lib/pico-sdk/src/common/pico_time/timeout_helper.o: __/lib/pico-sdk/src/common/pico_time/timeout_helper.c.o
@@ -279,7 +307,7 @@ __/lib/pico-sdk/src/common/pico_time/timeout_helper.o: __/lib/pico-sdk/src/commo
 
 # target to build an object file
 __/lib/pico-sdk/src/common/pico_time/timeout_helper.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/timeout_helper.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/timeout_helper.c.o
 .PHONY : __/lib/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
 __/lib/pico-sdk/src/common/pico_time/timeout_helper.i: __/lib/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -287,7 +315,7 @@ __/lib/pico-sdk/src/common/pico_time/timeout_helper.i: __/lib/pico-sdk/src/commo
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : __/lib/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 __/lib/pico-sdk/src/common/pico_time/timeout_helper.s: __/lib/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -295,7 +323,7 @@ __/lib/pico-sdk/src/common/pico_time/timeout_helper.s: __/lib/pico-sdk/src/commo
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : __/lib/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 __/lib/pico-sdk/src/common/pico_util/datetime.o: __/lib/pico-sdk/src/common/pico_util/datetime.c.o
@@ -303,7 +331,7 @@ __/lib/pico-sdk/src/common/pico_util/datetime.o: __/lib/pico-sdk/src/common/pico
 
 # target to build an object file
 __/lib/pico-sdk/src/common/pico_util/datetime.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/datetime.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/datetime.c.o
 .PHONY : __/lib/pico-sdk/src/common/pico_util/datetime.c.o
 
 __/lib/pico-sdk/src/common/pico_util/datetime.i: __/lib/pico-sdk/src/common/pico_util/datetime.c.i
@@ -311,7 +339,7 @@ __/lib/pico-sdk/src/common/pico_util/datetime.i: __/lib/pico-sdk/src/common/pico
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/pico_util/datetime.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/datetime.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : __/lib/pico-sdk/src/common/pico_util/datetime.c.i
 
 __/lib/pico-sdk/src/common/pico_util/datetime.s: __/lib/pico-sdk/src/common/pico_util/datetime.c.s
@@ -319,7 +347,7 @@ __/lib/pico-sdk/src/common/pico_util/datetime.s: __/lib/pico-sdk/src/common/pico
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/pico_util/datetime.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/datetime.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : __/lib/pico-sdk/src/common/pico_util/datetime.c.s
 
 __/lib/pico-sdk/src/common/pico_util/pheap.o: __/lib/pico-sdk/src/common/pico_util/pheap.c.o
@@ -327,7 +355,7 @@ __/lib/pico-sdk/src/common/pico_util/pheap.o: __/lib/pico-sdk/src/common/pico_ut
 
 # target to build an object file
 __/lib/pico-sdk/src/common/pico_util/pheap.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/pheap.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/pheap.c.o
 .PHONY : __/lib/pico-sdk/src/common/pico_util/pheap.c.o
 
 __/lib/pico-sdk/src/common/pico_util/pheap.i: __/lib/pico-sdk/src/common/pico_util/pheap.c.i
@@ -335,7 +363,7 @@ __/lib/pico-sdk/src/common/pico_util/pheap.i: __/lib/pico-sdk/src/common/pico_ut
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/pico_util/pheap.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/pheap.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : __/lib/pico-sdk/src/common/pico_util/pheap.c.i
 
 __/lib/pico-sdk/src/common/pico_util/pheap.s: __/lib/pico-sdk/src/common/pico_util/pheap.c.s
@@ -343,7 +371,7 @@ __/lib/pico-sdk/src/common/pico_util/pheap.s: __/lib/pico-sdk/src/common/pico_ut
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/pico_util/pheap.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/pheap.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : __/lib/pico-sdk/src/common/pico_util/pheap.c.s
 
 __/lib/pico-sdk/src/common/pico_util/queue.o: __/lib/pico-sdk/src/common/pico_util/queue.c.o
@@ -351,7 +379,7 @@ __/lib/pico-sdk/src/common/pico_util/queue.o: __/lib/pico-sdk/src/common/pico_ut
 
 # target to build an object file
 __/lib/pico-sdk/src/common/pico_util/queue.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/queue.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/queue.c.o
 .PHONY : __/lib/pico-sdk/src/common/pico_util/queue.c.o
 
 __/lib/pico-sdk/src/common/pico_util/queue.i: __/lib/pico-sdk/src/common/pico_util/queue.c.i
@@ -359,7 +387,7 @@ __/lib/pico-sdk/src/common/pico_util/queue.i: __/lib/pico-sdk/src/common/pico_ut
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/common/pico_util/queue.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/queue.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : __/lib/pico-sdk/src/common/pico_util/queue.c.i
 
 __/lib/pico-sdk/src/common/pico_util/queue.s: __/lib/pico-sdk/src/common/pico_util/queue.c.s
@@ -367,7 +395,7 @@ __/lib/pico-sdk/src/common/pico_util/queue.s: __/lib/pico-sdk/src/common/pico_ut
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/common/pico_util/queue.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/queue.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : __/lib/pico-sdk/src/common/pico_util/queue.c.s
 
 __/lib/pico-sdk/src/rp2040/pico_platform/platform.o: __/lib/pico-sdk/src/rp2040/pico_platform/platform.c.o
@@ -375,7 +403,7 @@ __/lib/pico-sdk/src/rp2040/pico_platform/platform.o: __/lib/pico-sdk/src/rp2040/
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2040/pico_platform/platform.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2040/pico_platform/platform.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2040/pico_platform/platform.c.o
 .PHONY : __/lib/pico-sdk/src/rp2040/pico_platform/platform.c.o
 
 __/lib/pico-sdk/src/rp2040/pico_platform/platform.i: __/lib/pico-sdk/src/rp2040/pico_platform/platform.c.i
@@ -383,7 +411,7 @@ __/lib/pico-sdk/src/rp2040/pico_platform/platform.i: __/lib/pico-sdk/src/rp2040/
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2040/pico_platform/platform.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2040/pico_platform/platform.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2040/pico_platform/platform.c.i
 .PHONY : __/lib/pico-sdk/src/rp2040/pico_platform/platform.c.i
 
 __/lib/pico-sdk/src/rp2040/pico_platform/platform.s: __/lib/pico-sdk/src/rp2040/pico_platform/platform.c.s
@@ -391,7 +419,7 @@ __/lib/pico-sdk/src/rp2040/pico_platform/platform.s: __/lib/pico-sdk/src/rp2040/
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2040/pico_platform/platform.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2040/pico_platform/platform.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2040/pico_platform/platform.c.s
 .PHONY : __/lib/pico-sdk/src/rp2040/pico_platform/platform.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
@@ -399,7 +427,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: __/lib/pico-sdk/s
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -407,7 +435,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: __/lib/pico-sdk/s
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -415,7 +443,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: __/lib/pico-sdk/s
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
@@ -423,7 +451,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: __/lib/pico-sdk/src/rp2
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -431,7 +459,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: __/lib/pico-sdk/src/rp2
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -439,7 +467,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: __/lib/pico-sdk/src/rp2
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_divider/divider.o: __/lib/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
@@ -447,7 +475,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_divider/divider.o: __/lib/pico-sdk/src/r
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_divider/divider.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_divider/divider.S.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
@@ -455,7 +483,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: __/lib/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -463,7 +491,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: __/lib/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -471,7 +499,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: __/lib/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.o: __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
@@ -479,7 +507,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.o: __/lib/pico-sdk/src/rp2_commo
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.i: __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -487,7 +515,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.i: __/lib/pico-sdk/src/rp2_commo
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.s: __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -495,7 +523,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.s: __/lib/pico-sdk/src/rp2_commo
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: __/lib/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -503,7 +531,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: __/lib/pico-sdk
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.o: __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
@@ -511,7 +539,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.o: __/lib/pico-sdk/src/rp2_commo
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.i: __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -519,7 +547,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.i: __/lib/pico-sdk/src/rp2_commo
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.s: __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -527,7 +555,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.s: __/lib/pico-sdk/src/rp2_commo
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.o: __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
@@ -535,7 +563,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.o: __/lib/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.i: __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -543,7 +571,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.i: __/lib/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.s: __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -551,7 +579,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.s: __/lib/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -559,7 +587,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: __/lib/
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -567,7 +595,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: __/lib/
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -575,7 +603,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: __/lib/
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
@@ -583,7 +611,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: __/lib/pico-sdk/src/rp2_c
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
@@ -591,7 +619,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: __/lib/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
@@ -599,7 +627,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: __/lib/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.o: __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
@@ -607,7 +635,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.o: __/lib/pico-sdk/src/rp2_c
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.i: __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -615,7 +643,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.i: __/lib/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.s: __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -623,7 +651,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.s: __/lib/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.o: __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
@@ -631,7 +659,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.o: __/lib/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.i: __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -639,7 +667,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.i: __/lib/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.s: __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -647,7 +675,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.s: __/lib/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
@@ -655,7 +683,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: __/lib/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -663,7 +691,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: __/lib/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -671,7 +699,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: __/lib/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -679,7 +707,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: __/lib/pico-sdk/src
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -687,7 +715,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: __/lib/pico-sdk/src
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -695,7 +723,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: __/lib/pico-sdk/src
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
@@ -703,7 +731,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: __/lib/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -711,7 +739,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: __/lib/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -719,7 +747,7 @@ __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: __/lib/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.o: __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
@@ -727,7 +755,7 @@ __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.o: __/lib/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.i: __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
@@ -735,7 +763,7 @@ __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.i: __/lib/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.s: __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
@@ -743,7 +771,7 @@ __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.s: __/lib/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: __/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -751,7 +779,7 @@ __/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: __/lib/pico-sdk/src
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -759,7 +787,7 @@ __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: __/lib/pico-sdk/src/rp2_c
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -767,7 +795,7 @@ __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: __/lib/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -775,7 +803,7 @@ __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: __/lib/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -783,7 +811,7 @@ __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: __/lib/pico-sdk/src/
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -791,7 +819,7 @@ __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: __/lib/pico-sdk/src/
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -799,7 +827,7 @@ __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: __/lib/pico-sdk/src/
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -807,7 +835,7 @@ __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: __/lib/pi
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -815,7 +843,7 @@ __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: __/lib/pi
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -823,7 +851,7 @@ __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: __/lib/pi
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_crt0/crt0.o: __/lib/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -831,7 +859,7 @@ __/lib/pico-sdk/src/rp2_common/pico_crt0/crt0.o: __/lib/pico-sdk/src/rp2_common/
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
 __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -839,7 +867,7 @@ __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: __/lib/pico-sdk/sr
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -847,7 +875,7 @@ __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: __/lib/pico-sdk/sr
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -855,7 +883,7 @@ __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: __/lib/pico-sdk/sr
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 __/lib/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: __/lib/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
@@ -863,7 +891,7 @@ __/lib/pico-sdk/src/rp2_common/pico_divider/divider_hardware.o: __/lib/pico-sdk/
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
 
 __/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: __/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
@@ -871,7 +899,7 @@ __/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.o: __/lib/pico-sd
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 
 __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
@@ -879,7 +907,7 @@ __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.o: __/lib/pico
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
@@ -887,7 +915,7 @@ __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.i: __/lib/pico
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
@@ -895,7 +923,7 @@ __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.s: __/lib/pico
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_double/double_math.o: __/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.o
@@ -903,7 +931,7 @@ __/lib/pico-sdk/src/rp2_common/pico_double/double_math.o: __/lib/pico-sdk/src/rp
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_double/double_math.i: __/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -911,7 +939,7 @@ __/lib/pico-sdk/src/rp2_common/pico_double/double_math.i: __/lib/pico-sdk/src/rp
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_double/double_math.s: __/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -919,7 +947,7 @@ __/lib/pico-sdk/src/rp2_common/pico_double/double_math.s: __/lib/pico-sdk/src/rp
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: __/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
@@ -927,7 +955,7 @@ __/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: __/lib/p
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
 __/lib/pico-sdk/src/rp2_common/pico_flash/flash.o: __/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.o
@@ -935,7 +963,7 @@ __/lib/pico-sdk/src/rp2_common/pico_flash/flash.o: __/lib/pico-sdk/src/rp2_commo
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_flash/flash.i: __/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.i
@@ -943,7 +971,7 @@ __/lib/pico-sdk/src/rp2_common/pico_flash/flash.i: __/lib/pico-sdk/src/rp2_commo
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_flash/flash.s: __/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.s
@@ -951,7 +979,7 @@ __/lib/pico-sdk/src/rp2_common/pico_flash/flash.s: __/lib/pico-sdk/src/rp2_commo
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: __/lib/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
@@ -959,7 +987,7 @@ __/lib/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.o: __/lib/pico-sdk/
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 
 __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
@@ -967,7 +995,7 @@ __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.o: __/lib/pico-s
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
@@ -975,7 +1003,7 @@ __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.i: __/lib/pico-s
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
@@ -983,7 +1011,7 @@ __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.s: __/lib/pico-s
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_float/float_math.o: __/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.o
@@ -991,7 +1019,7 @@ __/lib/pico-sdk/src/rp2_common/pico_float/float_math.o: __/lib/pico-sdk/src/rp2_
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_float/float_math.i: __/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -999,7 +1027,7 @@ __/lib/pico-sdk/src/rp2_common/pico_float/float_math.i: __/lib/pico-sdk/src/rp2_
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_float/float_math.s: __/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1007,7 +1035,7 @@ __/lib/pico-sdk/src/rp2_common/pico_float/float_math.s: __/lib/pico-sdk/src/rp2_
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: __/lib/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
@@ -1015,7 +1043,7 @@ __/lib/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: __/lib/pic
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
 __/lib/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: __/lib/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
@@ -1023,7 +1051,7 @@ __/lib/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: __/lib/pic
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
 __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.o: __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
@@ -1031,7 +1059,7 @@ __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.o: __/lib/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.i: __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
@@ -1039,7 +1067,7 @@ __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.i: __/lib/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.s: __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
@@ -1047,7 +1075,7 @@ __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.s: __/lib/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: __/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
@@ -1055,7 +1083,7 @@ __/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: __/lib/pico-sdk/src
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
 __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
@@ -1063,7 +1091,7 @@ __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: __/lib/pico-sdk/src/
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
@@ -1071,7 +1099,7 @@ __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: __/lib/pico-sdk/src/
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
@@ -1079,7 +1107,7 @@ __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: __/lib/pico-sdk/src/
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_printf/printf.o: __/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.o
@@ -1087,7 +1115,7 @@ __/lib/pico-sdk/src/rp2_common/pico_printf/printf.o: __/lib/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_printf/printf.i: __/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1095,7 +1123,7 @@ __/lib/pico-sdk/src/rp2_common/pico_printf/printf.i: __/lib/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_printf/printf.s: __/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1103,7 +1131,7 @@ __/lib/pico-sdk/src/rp2_common/pico_printf/printf.s: __/lib/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.o: __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
@@ -1111,7 +1139,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.o: __/lib/pico-sdk/src/rp2_c
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.i: __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1119,7 +1147,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.i: __/lib/pico-sdk/src/rp2_c
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.s: __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1127,7 +1155,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.s: __/lib/pico-sdk/src/rp2_c
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -1135,7 +1163,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: __/lib/pico-sdk
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -1143,7 +1171,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: __/lib/pico-sdk
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -1151,7 +1179,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: __/lib/pico-sdk
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -1159,7 +1187,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: __/lib/p
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -1167,7 +1195,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: __/lib/p
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -1175,7 +1203,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: __/lib/p
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -1183,7 +1211,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: __/
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -1191,7 +1219,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: __/
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -1199,7 +1227,7 @@ __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: __/
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -1207,7 +1235,7 @@ __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o:
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -1215,7 +1243,7 @@ __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i:
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -1223,7 +1251,7 @@ __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s:
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.o: __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
@@ -1231,7 +1259,7 @@ __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.o: __/lib/pico-sdk/src/rp2_commo
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.i: __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1239,7 +1267,7 @@ __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.i: __/lib/pico-sdk/src/rp2_commo
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.s: __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1247,7 +1275,7 @@ __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.s: __/lib/pico-sdk/src/rp2_commo
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
@@ -1255,7 +1283,7 @@ __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: __/lib/pico-sdk/src
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1263,7 +1291,7 @@ __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: __/lib/pico-sdk/src
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1271,7 +1299,7 @@ __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: __/lib/pico-sdk/src
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -1279,7 +1307,7 @@ __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: __/lib/pico-sdk/src/rp2_com
 
 # target to build an object file
 __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1287,7 +1315,7 @@ __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: __/lib/pico-sdk/src/rp2_com
 
 # target to preprocess a source file
 __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1295,7 +1323,7 @@ __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: __/lib/pico-sdk/src/rp2_com
 
 # target to generate assembly for a file
 __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/__/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : __/lib/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 main.o: main.c.o
@@ -1303,7 +1331,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/main.c.o
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -1311,7 +1339,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/main.c.i
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -1319,7 +1347,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/main.c.s
+	cd /home/bthek1/Documents/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -1330,6 +1358,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... picotoolBuild"
+	@echo "... picotoolForceReconfigure"
 	@echo "... main_project"
 	@echo "... __/lib/pico-sdk/src/common/hardware_claim/claim.o"
 	@echo "... __/lib/pico-sdk/src/common/hardware_claim/claim.i"
@@ -1491,6 +1521,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/bthek1/Documents/pico-new/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

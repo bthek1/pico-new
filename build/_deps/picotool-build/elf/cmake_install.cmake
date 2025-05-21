@@ -1,8 +1,8 @@
-# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/elf
+# Install script for directory: /home/bthek1/Documents/pico-new/build/_deps/picotool-src/elf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/proxmox-ml5/Documents/pico/pico-new/build/_deps")
+  set(CMAKE_INSTALL_PREFIX "/home/bthek1/Documents/pico-new/build/_deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

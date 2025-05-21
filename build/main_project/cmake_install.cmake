@@ -1,4 +1,4 @@
-# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-new/main_project
+# Install script for directory: /home/bthek1/Documents/pico-new/main_project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

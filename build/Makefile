@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/proxmox-ml5/Documents/pico/pico-new
+CMAKE_SOURCE_DIR = /home/bthek1/Documents/pico-new
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/proxmox-ml5/Documents/pico/pico-new/build
+CMAKE_BINARY_DIR = /home/bthek1/Documents/pico-new/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles /home/proxmox-ml5/Documents/pico/pico-new/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bthek1/Documents/pico-new/build/CMakeFiles /home/bthek1/Documents/pico-new/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/proxmox-ml5/Documents/pico/pico-new/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bthek1/Documents/pico-new/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -194,6 +194,32 @@ main_project/fast:
 	$(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/build
 .PHONY : main_project/fast
 
+#=============================================================================
+# Target rules for targets named picotoolForceReconfigure
+
+# Build rule for target.
+picotoolForceReconfigure: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolForceReconfigure
+.PHONY : picotoolForceReconfigure
+
+# fast build rule for target.
+picotoolForceReconfigure/fast:
+	$(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/picotoolForceReconfigure.dir/build.make main_project/CMakeFiles/picotoolForceReconfigure.dir/build
+.PHONY : picotoolForceReconfigure/fast
+
+#=============================================================================
+# Target rules for targets named picotoolBuild
+
+# Build rule for target.
+picotoolBuild: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 picotoolBuild
+.PHONY : picotoolBuild
+
+# fast build rule for target.
+picotoolBuild/fast:
+	$(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/picotoolBuild.dir/build.make main_project/CMakeFiles/picotoolBuild.dir/build
+.PHONY : picotoolBuild/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -204,6 +230,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
+	@echo "... picotoolBuild"
+	@echo "... picotoolForceReconfigure"
 	@echo "... pioasmBuild"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"

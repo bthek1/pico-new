@@ -1,4 +1,4 @@
-# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/rp2_common/pico_lwip
+# Install script for directory: /home/bthek1/Documents/pico-new/lib/pico-sdk/src/rp2_common/pico_lwip
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2_common/pico_lwip/tools/cmake_install.cmake")
+  include("/home/bthek1/Documents/pico-new/build/pico-sdk/src/rp2_common/pico_lwip/tools/cmake_install.cmake")
 endif()
 

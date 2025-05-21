@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/bthek1/Documents/pico-new/build/pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

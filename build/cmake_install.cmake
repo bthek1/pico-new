@@ -1,4 +1,4 @@
-# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-new
+# Install script for directory: /home/bthek1/Documents/pico-new
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/proxmox-ml5/Documents/pico/pico-new/build/pico-sdk/cmake_install.cmake")
-  include("/home/proxmox-ml5/Documents/pico/pico-new/build/main_project/cmake_install.cmake")
+  include("/home/bthek1/Documents/pico-new/build/pico-sdk/cmake_install.cmake")
+  include("/home/bthek1/Documents/pico-new/build/main_project/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/proxmox-ml5/Documents/pico/pico-new/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bthek1/Documents/pico-new/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

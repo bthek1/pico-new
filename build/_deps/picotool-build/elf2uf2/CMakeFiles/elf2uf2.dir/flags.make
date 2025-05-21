@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/elf2uf2 -I/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/elf -I/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool-src/errors -isystem /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/common/boot_uf2_headers/include
+CXX_INCLUDES = -I/home/bthek1/Documents/pico-new/build/_deps/picotool-src/elf2uf2 -I/home/bthek1/Documents/pico-new/build/_deps/picotool-src/elf -I/home/bthek1/Documents/pico-new/build/_deps/picotool-src/errors -isystem /home/bthek1/Documents/pico-new/lib/pico-sdk/src/common/boot_uf2_headers/include
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++14
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/proxmox-ml5/Documents/pico/pico-new/lib/pico-sdk/src/rp2_common/boot_bootrom_headers
+# Install script for directory: /home/bthek1/Documents/pico-new/lib/pico-sdk/src/rp2_common/boot_bootrom_headers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,5 +1,5 @@
-/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool/picotool
-/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool/picotoolTargets.cmake
-/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool/picotoolTargets-release.cmake
-/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool/picotoolConfig.cmake
-/home/proxmox-ml5/Documents/pico/pico-new/build/_deps/picotool/picotoolConfigVersion.cmake
+/home/bthek1/Documents/pico-new/build/_deps/picotool/picotool
+/home/bthek1/Documents/pico-new/build/_deps/picotool/picotoolTargets.cmake
+/home/bthek1/Documents/pico-new/build/_deps/picotool/picotoolTargets-release.cmake
+/home/bthek1/Documents/pico-new/build/_deps/picotool/picotoolConfig.cmake
+/home/bthek1/Documents/pico-new/build/_deps/picotool/picotoolConfigVersion.cmake
