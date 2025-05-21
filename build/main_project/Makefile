@@ -130,34 +130,6 @@ main_project/fast:
 	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/main_project.dir/build.make main_project/CMakeFiles/main_project.dir/build
 .PHONY : main_project/fast
 
-# Convenience name for target.
-main_project/CMakeFiles/picotoolForceReconfigure.dir/rule:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/CMakeFiles/picotoolForceReconfigure.dir/rule
-.PHONY : main_project/CMakeFiles/picotoolForceReconfigure.dir/rule
-
-# Convenience name for target.
-picotoolForceReconfigure: main_project/CMakeFiles/picotoolForceReconfigure.dir/rule
-.PHONY : picotoolForceReconfigure
-
-# fast build rule for target.
-picotoolForceReconfigure/fast:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/picotoolForceReconfigure.dir/build.make main_project/CMakeFiles/picotoolForceReconfigure.dir/build
-.PHONY : picotoolForceReconfigure/fast
-
-# Convenience name for target.
-main_project/CMakeFiles/picotoolBuild.dir/rule:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_project/CMakeFiles/picotoolBuild.dir/rule
-.PHONY : main_project/CMakeFiles/picotoolBuild.dir/rule
-
-# Convenience name for target.
-picotoolBuild: main_project/CMakeFiles/picotoolBuild.dir/rule
-.PHONY : picotoolBuild
-
-# fast build rule for target.
-picotoolBuild/fast:
-	cd /home/proxmox-ml5/Documents/pico/pico-new/build && $(MAKE) $(MAKESILENT) -f main_project/CMakeFiles/picotoolBuild.dir/build.make main_project/CMakeFiles/picotoolBuild.dir/build
-.PHONY : picotoolBuild/fast
-
 home/proxmox-ml5/Documents/pico/pico-sdk/src/common/hardware_claim/claim.o: home/proxmox-ml5/Documents/pico/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : home/proxmox-ml5/Documents/pico/pico-sdk/src/common/hardware_claim/claim.o
 
@@ -1358,8 +1330,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... picotoolBuild"
-	@echo "... picotoolForceReconfigure"
 	@echo "... main_project"
 	@echo "... home/proxmox-ml5/Documents/pico/pico-sdk/src/common/hardware_claim/claim.o"
 	@echo "... home/proxmox-ml5/Documents/pico/pico-sdk/src/common/hardware_claim/claim.i"
