@@ -4,3 +4,6 @@
 [submodule "build/_deps/picotool-src"]
 	path = build/_deps/picotool-src
 	url = https://github.com/raspberrypi/picotool.git
+[submodule "lib/pico-examples"]
+	path = lib/pico-examples
+	url = git@github.com:raspberrypi/pico-examples.git

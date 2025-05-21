@@ -4,6 +4,12 @@
   },
   "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
   "files.associations": {
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "pwm.h": "c",
+    "stdio.h": "c",
+    "stdbool.h": "c",
+    "ws2812.pio.h": "c",
+    "program_led.h": "c",
+    "string.h": "c"
   }
 }

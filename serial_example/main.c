@@ -24,6 +24,8 @@ int main() {
         if (auto_toggle && absolute_time_diff_us(get_absolute_time(), next_toggle) <= 0) {
             led_on = !led_on;
             gpio_put(LED_PIN, led_on);
+            printf("LED %s\n", led_on ? "ON" : "OFF");
+            fflush(stdout);
             next_toggle = delayed_by_ms(next_toggle, 250);
         }
 
@@ -56,7 +58,7 @@ int main() {
                 }
 
                 // Echo command back in uppercase
-                printf("\n 🔁 ");
+                printf("🔁 ");
                 for (int i = 0; i < input_pos; i++) {
                     putchar(toupper((unsigned char)input[i]));
                 }
@@ -65,9 +67,7 @@ int main() {
                 fflush(stdout);
                 input_pos = 0;
             } else if (input_pos < (int)(sizeof(input) - 1)) {
-                putchar(ch);  // Echo the typed character
                 input[input_pos++] = ch;
-                fflush(stdout);  // Ensure it appears immediately
             }
         }
 

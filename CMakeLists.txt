@@ -8,3 +8,5 @@ pico_sdk_init()
 
 add_subdirectory(main_project)
 add_subdirectory(oscilloscope)
+add_subdirectory(pwm_example)
+add_subdirectory(serial_example)
