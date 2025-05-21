@@ -1,12 +1,12 @@
 // main.c
 #include "pico/stdlib.h"
-#include "led.h"
-#include "pwm_driver.h"
-#include "serial.h"
-#include "command.h"
+#include "../src/led.h"
+#include "../src/pwm_driver.h"
+#include "../src/serial.h"
+#include "../src/command.h"
 #include <stdio.h>
-#include "led_program.h"
-#include "led_pattern.h"
+#include "../src/led_program.h"
+#include "../src/led_pattern.h"
 
 #define LED_COUNT (5 * 60)
 

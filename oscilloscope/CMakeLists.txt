@@ -1,11 +1,11 @@
 add_executable(oscilloscope
     main.c
-    led.c
-    pwm_driver.c
-    serial.c
-    command.c
-    led_program.c
-    led_pattern.c
+    ../src/led.c
+    ../src/pwm_driver.c
+    ../src/serial.c
+    ../src/command.c
+    ../src/led_program.c
+    ../src/led_pattern.c
 )
 
 # 👇 Correct: point to the actual .pio file path
